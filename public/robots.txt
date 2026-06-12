@@ -1,5 +1,5 @@
 # Sentryx Solutions — robots.txt
-# https://sentryx.in/
+# https://sentryx-solutions.vercel.app/
 
 User-agent: *
 Allow: /
@@ -9,7 +9,7 @@ Disallow: /src/
 Disallow: /node_modules/
 
 # Point to sitemap
-Sitemap: https://sentryx.in/sitemap.xml
+Sitemap: https://sentryx-solutions.vercel.app/sitemap.xml
 
 # Crawl delay for aggressive bots
 User-agent: AhrefsBot
