@@ -20,7 +20,7 @@ const WhyUs = () => {
   const inView = useInView(ref, { once: true, amount: 0.2 })
 
   return (
-    <section className="py-28 relative overflow-hidden" ref={ref}>
+    <section id="whyus" className="py-28 relative overflow-hidden" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left */}

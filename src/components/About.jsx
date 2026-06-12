@@ -72,8 +72,10 @@ const About = () => {
             <div className="rounded-2xl overflow-hidden aspect-[4/5] bg-[#111] relative">
               <img
                 src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80"
-                alt="Sentryx team collaborating on digital marketing strategy"
+                alt="Sentryx Solutions team collaborating on digital marketing strategy in Hyderabad"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/60 to-transparent" />
             </div>

@@ -1,0 +1,19 @@
+# Sentryx Solutions — robots.txt
+# https://sentryx.in/
+
+User-agent: *
+Allow: /
+
+# Disallow unnecessary paths
+Disallow: /src/
+Disallow: /node_modules/
+
+# Point to sitemap
+Sitemap: https://sentryx.in/sitemap.xml
+
+# Crawl delay for aggressive bots
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10

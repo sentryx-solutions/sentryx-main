@@ -123,7 +123,7 @@ const Portfolio = () => {
               >
                 <BorderGlow borderRadius={16} backgroundColor="#111111" className="h-full" glowRadius={25}>
                   <div className="project-card h-full group" style={{ border: 'none', transform: 'none', boxShadow: 'none' }}>
-                    <img src={project.img} alt={project.title} />
+                    <img src={project.img} alt={`${project.title} — ${project.tag} by Sentryx Solutions Hyderabad`} loading="lazy" />
                     <div className="overlay" />
 
                     {/* Hover info panel */}

@@ -131,15 +131,17 @@ const Footer = () => {
           {/* Contact */}
           <div>
             <h4 className="text-white text-xs font-black uppercase tracking-widest mb-5" style={{ fontFamily: 'Outfit' }}>Contact Us</h4>
-            <ul className="space-y-3">
-              {[
-                { label: 'hello@sentryx.in', href: 'mailto:hello@sentryx.in' },
-                { label: PHONE_DISPLAY, href: `tel:+919542905904` },
-                { label: 'Hyderabad, India 🇮🇳', href: '#' },
-              ].map((item, i) => (
-                <li key={i}><a href={item.href} className="text-[#444] hover:text-[#c8f135] text-xs transition-colors duration-200">{item.label}</a></li>
-              ))}
-            </ul>
+            <address
+              itemScope
+              itemType="https://schema.org/LocalBusiness"
+              style={{ fontStyle: 'normal' }}
+            >
+              <ul className="space-y-3">
+                <li><a href="mailto:hello@sentryx.in" itemProp="email" className="text-[#444] hover:text-[#c8f135] text-xs transition-colors duration-200">hello@sentryx.in</a></li>
+                <li><a href="tel:+919542905904" itemProp="telephone" className="text-[#444] hover:text-[#c8f135] text-xs transition-colors duration-200">{PHONE_DISPLAY}</a></li>
+                <li><span itemProp="address" itemScope itemType="https://schema.org/PostalAddress"><span itemProp="addressLocality" className="text-[#444] text-xs">Hyderabad</span><span className="text-[#444] text-xs">, India 🇮🇳</span></span></li>
+              </ul>
+            </address>
           </div>
         </div>
 

@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import logo from '../assets/logo.png'
 
-const navItems = ['Home', 'About', 'Services', 'Portfolio', 'Pricing', 'Contact']
+const navItems = ['Home', 'About', 'Services', 'Portfolio', 'Contact']
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
