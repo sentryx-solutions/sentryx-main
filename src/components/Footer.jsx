@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { MessageCircle } from 'lucide-react'
+import logo from '../assets/logo.png'
 
 const WA_NUMBER = '919542905904'
 const PHONE_DISPLAY = '+91 95429 05904'
@@ -77,11 +78,13 @@ const Footer = () => {
 
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-7 h-7 bg-[#c8f135] rounded-md flex items-center justify-center">
-                <span className="text-black font-black text-sm" aria-hidden="true">S</span>
-              </div>
-              <span className="font-black text-lg tracking-tight" style={{ fontFamily: 'Outfit' }}>SENTRYX</span>
+            <div className="flex items-center mb-4">
+              <img
+                src={logo}
+                alt="Sentryx Solutions"
+                className="h-12 w-auto object-contain"
+                style={{ filter: 'invert(1) brightness(2)' }}
+              />
             </div>
             <p className="text-[#444] text-xs leading-relaxed mb-5">
               Hyderabad's leading digital agency for WhatsApp marketing, AI agents, and promotional websites.

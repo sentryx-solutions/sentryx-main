@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
+import logo from '../assets/logo.png'
 
 const navItems = ['Home', 'About', 'Services', 'Portfolio', 'Pricing', 'Contact']
 
@@ -44,17 +45,16 @@ const Navbar = () => {
           {/* Logo */}
           <motion.a
             href="#home"
-            className="flex items-center gap-2"
+            className="flex items-center"
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}
           >
-            <div className="w-8 h-8 bg-[#c8f135] rounded-md flex items-center justify-center flex-shrink-0">
-              <span className="text-black font-black text-sm">S</span>
-            </div>
-            <div className="flex flex-col leading-none">
-              <span className="font-black text-[15px] tracking-widest" style={{ fontFamily: 'Outfit' }}>SENTRYX</span>
-              <span className="text-[9px] font-bold tracking-[0.2em] text-[#c8f135]" style={{ fontFamily: 'Outfit' }}>SOLUTIONS</span>
-            </div>
+            <img
+              src={logo}
+              alt="Sentryx Solutions"
+              className="h-12 w-auto object-contain"
+              style={{ filter: 'invert(1) brightness(2)' }}
+            />
           </motion.a>
 
           {/* Desktop Nav */}
